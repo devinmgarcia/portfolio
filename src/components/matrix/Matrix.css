@@ -1,5 +1,4 @@
     .drum-section {
-        margin-top: 3rem;
         display: flex;
         justify-content: center;
     }
@@ -10,7 +9,10 @@
         position: relative;
         border-radius: 5px;
         padding: .5rem;
-        box-shadow: -10px 3px 15px rgba(0, 0, 0, 1);
+        box-shadow: -14px 13px 16px rgb(0, 0, 0, .5);
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 3rem;
     }
     
     .drums {

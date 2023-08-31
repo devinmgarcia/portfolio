@@ -1,0 +1,13 @@
+.nameWrapper {
+    display: flex;
+    width: 100%;
+}
+
+.name {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 100px;
+    margin-left: auto;
+    padding: 3rem;
+    color: #FFF;
+    text-shadow: -14px 13px 16px rgb(0, 0, 0, .5);
+}

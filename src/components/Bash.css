@@ -1,8 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 body {
-    margin: 0;
-    background-image: url("../images/table.jpg");
-    background-size: 100%;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-image: url("https://i.imgur.com/jCLn5Uz.png");
+  font-family: "Roboto", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
 }
+
+/* https://i.imgur.com/3n3p1FD.png */ 
