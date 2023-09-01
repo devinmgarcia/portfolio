@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 body {
   margin: 0;
-  background-image: url("https://i.imgur.com/jCLn5Uz.png");
+  background-image: url("https://i.imgur.com/QTllMY6.jpg");
   font-family: "Roboto", sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,5 +12,13 @@ body {
   background-attachment: fixed;
   height: 100vh;
 }
-
-/* https://i.imgur.com/3n3p1FD.png */ 
+.glass {
+  margin: 2rem;
+  padding: 2rem 4rem 0 4rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

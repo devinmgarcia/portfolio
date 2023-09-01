@@ -10,9 +10,6 @@
         border-radius: 5px;
         padding: .5rem;
         box-shadow: -14px 13px 16px rgb(0, 0, 0, .5);
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 3rem;
     }
     
     .drums {
