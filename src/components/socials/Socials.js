@@ -9,6 +9,7 @@ export const Socials = () => {
       <a target="blank" href="https://github.com/devinmgarcia"><div className="social-icon-git fab fa-github fa-3x"></div></a>
       <a href="mailto:devinmgarcia@gmail.com" ><div className="social-icon-envelope fa fa-envelope fa-3x"></div></a>
       <a href="mailto:devinmgarcia@gmail.com" ><div className="social-icon-resume fa fa-file-text fa-3x"></div></a>
+      <a target="blank" href="https://falseindigo.net/" ><div className="social-icon-music fa fa-music fa-3x"></div></a>
     </div>
   );
 };

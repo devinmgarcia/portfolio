@@ -1,0 +1,16 @@
+.about-wrapper {
+    width: 60%;
+    margin: auto;
+}
+.about-paragraph {
+    color: #FFF;
+    font-size: 14px;
+}
+.self-portrait {
+    height: 100%;
+}
+.section {
+    display: flex;
+    height: 350px;
+    padding: 2rem 0;
+}
