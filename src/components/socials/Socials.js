@@ -8,7 +8,7 @@ export const Socials = () => {
       <a target="blank" href="https://www.linkedin.com/in/devinmgarcia/"><div className="social-icon-linked fab fa-linkedin fa-3x"></div></a>
       <a target="blank" href="https://github.com/devinmgarcia"><div className="social-icon-git fab fa-github fa-3x"></div></a>
       <a href="mailto:devinmgarcia@gmail.com" ><div className="social-icon-envelope fa fa-envelope fa-3x"></div></a>
-      <a href="mailto:devinmgarcia@gmail.com" ><div className="social-icon-resume fa fa-file-text fa-3x"></div></a>
+      <a target="blank" href="https://drive.google.com/file/d/1f1X63Npa9MrQy3cxrWVBnL6p1ICpWX5s/view" ><div className="social-icon-resume fa fa-file-text fa-3x"></div></a>
       <a target="blank" href="https://falseindigo.net/" ><div className="social-icon-music fa fa-music fa-3x"></div></a>
     </div>
   );
