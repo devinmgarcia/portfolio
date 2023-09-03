@@ -1,34 +1,41 @@
 import React from "react";
+import { useState } from "react";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Sidebar.css";
+import { useHistory } from "react-router-dom";
 
-export const Sidebar = () => {
+function Example() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const history = useHistory();
+
   return (
     <>
-    <button
-    class="btn btn-primary"
-    type="button"
-    data-mdb-toggle="offcanvas"
-    data-mdb-target="#offcanvasRight"
-    aria-controls="offcanvasRight"
-  >
-    Toggle right offcanvas
-  </button>
-  
-  <div
-    class="offcanvas offcanvas-end"
-    tabindex="-1"
-    id="offcanvasRight"
-    aria-labelledby="offcanvasRightLabel"
-  >
-    <div class="offcanvas-header">
-      <h5 id="offcanvasRightLabel">Offcanvas right</h5>
-      <button
-        type="button"
-        class="btn-close text-reset"
-        data-mdb-dismiss="offcanvas"
-        aria-label="Close"
-      ></button>
-    </div>
-    <div class="offcanvas-body">...</div>
-  </div></>
+      <div onClick={handleShow} className="hamburger fa fa-bars fa-3x"></div>
+      <Offcanvas
+        show={show}
+        onHide={handleClose}
+        placement="end"
+        className="offcanvas-width"
+      >
+        <Offcanvas.Header closeButton closeVariant="white">
+          <Offcanvas.Title></Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body className="offcanvas-body">
+          <div
+            onClick={() => {
+              history.push("./about");
+            }}
+            className="offcanvas-menu-item"
+          >
+            About Me
+          </div>
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
   );
-};
+}
+
+export default Example;
