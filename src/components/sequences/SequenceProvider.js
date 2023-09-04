@@ -2,7 +2,7 @@ import React, { useState, createContext } from "react";
 
 
 
-const api = "http://localhost:3000/api";
+const api = "localhost:3000/api";
 export const SequenceContext = createContext();
 
 export const SequenceProvider = (props) => {
