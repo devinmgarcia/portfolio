@@ -19,6 +19,7 @@ export const Preset = () => {
     getPresets();
   }, []);
 
+
   useEffect(() => {
     if (initialRun){
       const initialPreset = presets[0] || { name: "", sequences: [] };

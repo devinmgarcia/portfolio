@@ -9,6 +9,11 @@ import Example from "./components/sidebar/Sidebar";
 import { About } from "./components/about/About";
 
 export const ApplicationViews = () => {
+
+  React.useEffect(()=>{
+    localStorage.setItem("bash_user", JSON.stringify(1))
+  })
+  
   return (
     <>
       <SequenceProvider>
