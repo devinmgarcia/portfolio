@@ -2,7 +2,7 @@ import React, { useState, createContext } from "react";
 
 
 
-const api = "http://18.116.84.64:3000/api";
+const api = "http://18.116.84.64/api";
 export const SequenceContext = createContext();
 
 export const SequenceProvider = (props) => {

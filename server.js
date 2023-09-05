@@ -1,4 +1,3 @@
-// server.js
 const express = require('express');
 const jsonServer = require('json-server');
 const path = require('path');
@@ -16,7 +15,9 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-const PORT = process.env.PORT || 3000;
+// Use port 80 for HTTP
+const PORT = process.env.PORT || 80;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
-})
+});
+
