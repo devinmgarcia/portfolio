@@ -1,8 +1,12 @@
 const express = require('express');
 const jsonServer = require('json-server');
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
+
+// Enable cors for all routes
+app.use(cors());
 
 // Serve React app build files
 app.use(express.static(path.join(__dirname, 'build')));
@@ -20,4 +24,5 @@ const PORT = process.env.PORT || 80;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
 
