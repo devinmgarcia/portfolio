@@ -32,6 +32,13 @@ function Example() {
           >
             About Me
           </div>
+          <a
+            className="offcanvas-menu-item"
+            target="blank"
+            href="https://drive.google.com/file/d/1f1X63Npa9MrQy3cxrWVBnL6p1ICpWX5s/view"
+          >
+            Resume
+          </a>
         </Offcanvas.Body>
       </Offcanvas>
     </>
