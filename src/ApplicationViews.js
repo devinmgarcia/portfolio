@@ -5,15 +5,14 @@ import { PresetProvider } from "./components/presets/PresetProvider";
 import { SequenceProvider } from "./components/sequences/SequenceProvider";
 import { Header } from "./components/header/Header";
 import { Socials } from "./components/socials/Socials";
-import Example from "./components/sidebar/Sidebar";
+import Sidebar from "./components/sidebar/Sidebar";
 import { About } from "./components/about/About";
 
 export const ApplicationViews = () => {
+  React.useEffect(() => {
+    localStorage.setItem("bash_user", JSON.stringify(1));
+  });
 
-  React.useEffect(()=>{
-    localStorage.setItem("bash_user", JSON.stringify(1))
-  })
-  
   return (
     <>
       <SequenceProvider>
@@ -24,11 +23,11 @@ export const ApplicationViews = () => {
               <Preset />
               <Socials />
             </div>
-            <Example />
           </Route>
           <Route exact path="/about">
             <About />
           </Route>
+          <Sidebar />
         </PresetProvider>
       </SequenceProvider>
     </>

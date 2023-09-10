@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Sidebar.css";
 import { useHistory } from "react-router-dom";
 
-function Example() {
+function Sidebar() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -26,23 +26,45 @@ function Example() {
         <Offcanvas.Body className="offcanvas-body">
           <div
             onClick={() => {
-              history.push("./about");
+              history.push("./");
+              setShow(false);
             }}
             className="offcanvas-menu-item"
           >
-            About Me
+            Home
           </div>
-          <a
+          <div
+            onClick={() => {
+              history.push("./about");
+              setShow(false);
+            }}
             className="offcanvas-menu-item"
-            target="blank"
-            href="https://drive.google.com/file/d/1f1X63Npa9MrQy3cxrWVBnL6p1ICpWX5s/view"
           >
-            Resume
-          </a>
+            About
+          </div>
+          <div className="offcanvas-menu-item">
+            <a
+            className="offcanvas-menu-link"
+              target="blank"
+              href="https://drive.google.com/file/d/1f1X63Npa9MrQy3cxrWVBnL6p1ICpWX5s/view"
+            >
+              Resume
+            </a>
+          </div>
+          <div className="offcanvas-menu-item">
+            <a className="offcanvas-menu-link" target="blank" href="https://falseindigo.net/">
+              Music
+            </a>
+          </div>
+          <div className="offcanvas-menu-item">
+          <a className="offcanvas-menu-link" href="mailto:devinmgarcia@gmail.com">
+         Contact
+        </a>
+          </div>
         </Offcanvas.Body>
       </Offcanvas>
     </>
   );
 }
 
-export default Example;
+export default Sidebar;
