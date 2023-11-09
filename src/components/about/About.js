@@ -7,7 +7,7 @@ export const About = () => {
       <div div className="section">
         <div className="about-paragraph">
           <p>
-            Hello! I'm Devin, a professional with nearly 11 years of experience
+            Hello! I'm Devin, a software engineer and musician. I have 11 years of experience
             in the music instrument retail industry, where I've worked as both a
             retail associate and manager. During the challenging times of the
             2020 pandemic, I found myself furloughed for six months. It was
